@@ -13,7 +13,7 @@ const albumData = [
       { src: "assets/photos/01-young/05.jpg", caption: "湖边的风，吹亮她的笑意。" },
       { src: "assets/photos/01-young/06.jpg", caption: "回望那一刻，温柔刚刚好。" },
       { src: "assets/photos/01-young/07.jpg", caption: "林间阳光里，她笑得安静。" },
-      { src: "assets/photos/01-young/08.jpg", caption: "红叶映着她，像一场小节日。" },
+      { src: "assets/photos/01-young/08.jpg", caption: "吉祥挂件旁，她笑得温柔。" },
       { src: "assets/photos/01-young/09.JPG", caption: "山水之间，她自在又明亮。" },
       { src: "assets/photos/01-young/10.jpg", caption: "蓝裙捧花，像被春天照见。" },
       { src: "assets/photos/01-young/11.JPG", caption: "站在远方，也站在光里面。" },
