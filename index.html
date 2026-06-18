@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>老婆生日快乐</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="bgm" src="assets/music/birthday.mp3" loop preload="auto" playsinline></audio>
+
+    <main class="app">
+      <section class="cover" id="cover">
+        <div class="cover-bg" aria-hidden="true"></div>
+        <div class="cover-content">
+          <p class="eyebrow">A Birthday Album For Her</p>
+          <h1 class="hero-title">
+            <span>生日快乐</span>
+            <span>今天，只为她</span>
+          </h1>
+          <p class="cover-subtitle">从青涩到温柔，从独自闪光到照亮一个小小世界。</p>
+          <button class="primary-btn" id="startBtn" type="button">开启她的生日相册 →</button>
+          <p class="music-tip" id="musicTip" role="status"></p>
+        </div>
+      </section>
+
+      <section class="album hidden" id="album" aria-label="生日电子相册">
+        <header class="album-head reveal">
+          <p class="eyebrow">Birthday Album</p>
+          <h2>今天只属于她</h2>
+          <p>把时间放慢一点，把每一张照片里的温柔，都认真看一遍。</p>
+          <div class="album-actions">
+            <button class="primary-btn auto-start-btn" id="autoPlayBtn" type="button">自动播放相册</button>
+          </div>
+        </header>
+
+        <section class="auto-player hidden" id="autoPlayer" aria-label="自动播放相册">
+          <div class="auto-stage">
+            <img id="autoPhoto" src="" alt="" />
+          </div>
+          <div class="auto-info">
+            <p class="eyebrow" id="autoChapter">Chapter</p>
+            <h2 id="autoCaption">照片说明</h2>
+            <p id="autoCount">1 / 1</p>
+          </div>
+          <div class="auto-controls">
+            <button class="primary-btn" id="autoPauseBtn" type="button">暂停播放</button>
+            <button class="ghost-btn" id="autoExitBtn" type="button">返回浏览</button>
+          </div>
+        </section>
+
+        <div id="chapters"></div>
+
+        <section class="ending reveal" id="ending">
+          <p class="eyebrow">Happy Birthday</p>
+          <h2>生日快乐</h2>
+          <p>
+            愿新的一岁，她可以少一点操心，多一点自在；少一点疲惫，多一点喜欢的生活。
+          </p>
+          <p>
+            愿她不只是被需要，也被偏爱；不只是照顾别人，也被好好照顾。
+          </p>
+          <p>今天的鲜花、音乐和照片，都只为她。</p>
+          <span class="signature">献给今天最重要的她</span>
+          <p class="music-credit">Music: Touching Moments Two - Higher - Kevin MacLeod</p>
+          <button class="ghost-btn" id="replayBtn" type="button">重新播放</button>
+        </section>
+      </section>
+    </main>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="播放或暂停音乐">静音</button>
+    <div class="audio-fallback hidden" id="audioFallback">
+      <p>如果音乐没有响起，可点这里播放。</p>
+    </div>
+
+    <div class="lightbox hidden" id="lightbox" aria-modal="true" role="dialog">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="关闭预览">×</button>
+      <figure>
+        <img id="lightboxImg" src="" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
